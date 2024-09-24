@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokémon Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pokémon Viewer</h1>
+    <div id="search-container">
+      <form>
+        <input
+          type="text"
+          id="pokemon-input"
+          placeholder="Enter Pokémon name or ID"
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </div>
+    <div id="loading" style="display: none">Loading...</div>
+    <div id="error-message"></div>
+    <div id="pokemon-container">
+      <!-- Pokémon data will be displayed here -->
+      <h1 id="name"></h1>
+      <p id="type"></p>
+      <p id="abilities"></p>
+      <p id="stats"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
